@@ -1,0 +1,64 @@
+/* CSS Document */
+@charset "utf-8";
+.container{ width:1200px; margin:0 auto}
+.rel{ position:relative}
+.abs{ position:absolute}
+.fix{ position:fixed}
+.w1200{ width:1200px;}
+.red{ background-color:red !important}
+.disB{ display:block !important}
+.disinB{ display:inline-block}
+.disN{ display:none}
+.ofh{ overflow:hidden}
+.clear{ clear:both}
+.fl{ float:left}
+.w50{ width:50%}
+.w25{ width:25%}
+
+#hdWrap{  padding:26px 0 26px; z-index:100 }
+#hdWrap .bg{ position:absolute; width:100%; height:0; background-color:#cccccc80; transition:0.5s}
+#hdWrap.act .bg{ height:160px}
+#hdWrap h1{ float:left}
+#hdWrap #gnb{ float:right; margin-top:15px; position:relative; z-index:100}
+#hdWrap .container:after{ content:""; display:block; clear:both }
+
+#hdWrap #gnb > li{ float:left; position:relative; padding:0 30px; border-right:1px solid #222}
+#hdWrap #gnb > li a.d1{ display:block; line-height:100%; font-size:20px}
+#hdWrap #gnb > li .d2{ position:absolute; width:100%; height:0; 
+left:0; transition: 0.8s; overflow:hidden;  }
+#hdWrap #gnb > li .d2 a{ display:block; line-height:180%; text-indent:15px}
+#hdWrap #gnb > li .d2 a:first-child{ margin-top:45px}
+#hdWrap #gnb > li .d2 a:last-child{ margin-bottom:25px}
+
+#hdWrap #gnb > li:hover a.d1{ color:#06F}
+#hdWrap #gnb:hover .d2{ height:180px; }
+
+
+#sliderbox{}
+#sliderbox  ul{ width:100000px; }
+#sliderbox  li{ float:left; width:1200px;}
+#sliderbox  li  img{ width:100%}
+#sliderbox #sliderPager{width:100%; bottom:10px; text-align:center}
+#sliderbox #sliderPager a{ display:inline-block; background-color:#ccc; border-radius:50%; width:20px; height:20px }
+#sliderbox #sliderPager a.on{ background-color:#33C}
+
+#sliderControl{ width:100%; height:0px; top:50%; }
+#sliderControl button{ transform:translateY(-50%); font-size:25px; background-color:transparent; border:none; cursor:pointer}
+#sliderControl button:hover { color:#039}
+#sliderControl button i{}
+#sliderControl .prev{ float:left}
+#sliderControl .next{ float:right}
+
+#board{ padding:15px 0}
+#board h3{ font-size:20px; padding:5px 0}
+#board ul{ margin-top:15px}
+#board ul li{ list-style:circle; margin-left:35px; margin-bottom:5px}
+#board ul li a{}
+#board .bannerImg{}
+#board .bannerImg a{ display:block}
+#board .bannerImg a img{ width:100%;}
+.qna h3 a{ float:right; display:block; background-color:black; width:20px; height:20px; color:white; border-radius:50%; margin-right:15px; text-align:center; line-height:19px; font-family:Tahoma, Geneva, sans-serif  }
+.notice{ border-right:1px solid #ccc}
+.notice:after{ content:""; display:block; background-color:#000; width:1px; height:100%; position:absolute; right:35px; top:0}
+#fixWrap{ position:fixed; width:100%; height:100%; background-color:rgba(0,0,0,0); left:0; right:0; top:0; z-index:-1}
+#fixWrap.act{ z-index:100000; background-color:rgba(0,0,0,.5)}

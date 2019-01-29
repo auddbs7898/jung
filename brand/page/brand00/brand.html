@@ -1,0 +1,1887 @@
+<?php include_once("../../inc/top.php"); ?>
+<script>
+$(document).ready(function(){
+        $('#mainlisttrigger').click(function(){
+        
+            $.ajax({
+               type: "GET"
+               ,dataType: "xml"
+               ,url: "../../xml/introduce/brand00.xml"
+               ,success: function(xml){
+                    var xmlData = $(xml).find("info");
+                    var listLength = xmlData.length;
+                    if (listLength) {
+                        var contentStr = new Array();
+                        $(xmlData).each(function(){
+                            contentStr[0]= $(this).find("브랜드명").text();
+                        });
+                        $(".gnb-logo a").attr({"title" :contentStr[0] }).html(contentStr[0]);
+                    }
+                }
+				,error: function(){
+					alert('에러');
+				}
+             }); 
+      
+        });
+		$('#mainlisttrigger').trigger('click');
+		
+    });
+</script>
+            
+
+           
+
+            <div id="contents">
+                
+
+
+<div class="comp comp--home-contents">
+ 
+ <div class="corner">
+  
+  <div class="corner__body">
+   <div class="format-result">
+    <div class="format-result__list">
+     <ul class="format-itemcard-list">
+       
+       
+       
+       
+       
+       <li class="format-itemcard-list__item">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=14313" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;6&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/10/16/160ffa7f3a5a4641.jpg" alt="금-10-스케처스" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=14313" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;6&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">희열의 스케처스</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">걷는 히열 달리는 희열</span>
+        <span class="bannercard__visual__summary__row ellipsis">예쁘게 신고 입는 희열</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  
+
+  
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=23520" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;7&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/10/16/962d0cf825e5404a.jpg" alt="금-11-애플" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=23520" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;7&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">늘 새로운 사과가 열린다</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">혁신을 또 혁신하는</span>
+        <span class="bannercard__visual__summary__row ellipsis">네버 엔딩 스토리, 애플</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  
+
+  
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=20644" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;8&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/09/07/556121329037441e.jpg" alt="금-13-직구운동화" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=20644" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;8&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">가을이 오면 운동화를 준비하게 돼</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">선선한 바람 온화한 햇살</span>
+        <span class="bannercard__visual__summary__row ellipsis">운동화 신고 가을을 헤매어 봐요</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  
+
+  
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=19823" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;9&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/10/15/344b6a4599564375.jpg" alt="금-14-유한킴벌리" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=19823" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;9&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">풍성한 가을을 만들어줄</span>
+        <span class="bannercard__visual__summary__row ellipsis">유한킴벌리 세일페스타</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">온 가족 필수품을 오늘 장만하세요!</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  
+
+  
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=22588" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;10&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/10/12/e15070b20e3b4a2a.jpg" alt="금일-15-걷기" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=22588" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;10&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">날씨도 좋고 풍경도 아름답고</span>
+        <span class="bannercard__visual__summary__row ellipsis">걷지 않을 이유가 있나요?</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">지금 걸어 봐야 할 그 곳 리스트와</span>
+        <span class="bannercard__visual__summary__row ellipsis">바르게 걷기의 기술</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  
+
+  
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=19551" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;11&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/10/17/6b0b9c05495743aa.jpg" alt="금-16-토니모리" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=19551" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;11&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">예쁜 걸로 이 구역 가성비 갑</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">가을도 토니모리와 함께</span>
+        <span class="bannercard__visual__summary__row ellipsis">토니모리 전품목 빅세일</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  
+
+  
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=23349" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;12&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/09/18/91b92c9072f348d5.jpg" alt="금-17-텐트" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=23349" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;12&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">자연 속 두 번째 우리집</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">캠핑 가서도 집처럼 편안하게</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="bannercard__body">
+   <div class="bannercard-item-group">
+    <ul class="bannercard-item-group__list">
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1283779867" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1283779867/o?ts=" alt="(현대Hmall)MSR 엘릭서 3  텐트 풋프린트 증정 (호상사 정품)" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1283779867" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">329,280</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand"></span>
+     <span class="bannercard-itemcard__title__name">(현대Hmall)MSR 엘릭서 3  텐트 풋프린트 증정 (호상사 정품)</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1282627402" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1282627402/o?ts=" alt="코카콜라 코카콜라 정품 스텐 피크닉쿨러/아이스박스 13L" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1282627402" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">107,700</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">코카콜라</span>
+     <span class="bannercard-itemcard__title__name">코카콜라 정품 스텐 피크닉쿨러/아이스박스 13L</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/10/04/a7aed26b5b284d9b.png" alt="1004_카드사X백화점&amp;홈쇼핑_5%할인"><span class="for-a11y">PromotionTag_7943</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1462264401" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1462264401/o?ts=15350177388630000" alt="콜맨 (현대Hmall)[콜맨][무료배송] 파이어 플레이스 테이블 2000010397 / 화로테이블 / 화로대" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1462264401" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">114,240</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">콜맨</span>
+     <span class="bannercard-itemcard__title__name">(현대Hmall)[콜맨][무료배송] 파이어 플레이스 테이블 2000010397 / 화로테이블 / 화로대</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="bannercard__footer">
+    <div class="bannercard__footer__more">
+
+     <a href="http://rpp.g9.co.kr/?exhib=23349" class="bannercard__footer__more__link" data-area-code="300001419" data-area-type="utility">
+             <span class="bannercard__footer__more__title">마음이 쉬는 여행, 가을 캠핑</span>
+      <i class="icon sp-itemcard arrow2_bk_right">스토어 더보기화살표</i>
+     </a>
+    </div>
+  </div>
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://www.g9.co.kr/Display/BrandShop/600" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;13&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/10/12/f62638674a924002.jpg" alt="금-18-신선지구 일식" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://www.g9.co.kr/Display/BrandShop/600" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;13&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">이따다끼마스!</span>
+        <span class="bannercard__visual__summary__row ellipsis">음~ 오이시 데쓰!</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">신선지구 세계일주 일식 편</span>
+        <span class="bannercard__visual__summary__row ellipsis">간편하게 해먹는 쿠킹박스</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="bannercard__body">
+   <div class="bannercard-item-group">
+    <ul class="bannercard-item-group__list">
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1435738654" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1435738654/o?ts=15395627400470000" alt="신선지구 소고기샤브샤브/매콤밀푀유나베/훈제오리월남쌈/레드칠리스테이크 총 4종(2인분)" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1435738654" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">12,900</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">신선지구</span>
+     <span class="bannercard-itemcard__title__name">소고기샤브샤브/매콤밀푀유나베/훈제오리월남쌈/레드칠리스테이크 총 4종(2인분)</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+ <!--class 로 넣을경우 -->
+ <li class="format-badge-group__list"><span class="badge img_buy_badge"><span class="for-a11y">BundleDiscount_0_복수구매할인</span></span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1463044523" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1463044523/o?ts=" alt="신선지구 밀푀유나베/분짜/양장피/칠리크랩/팟타이/월남쌈 총 11종(2인분)" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1463044523" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">14,900</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">신선지구</span>
+     <span class="bannercard-itemcard__title__name">밀푀유나베/분짜/양장피/칠리크랩/팟타이/월남쌈 총 11종(2인분)</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+ <!--class 로 넣을경우 -->
+ <li class="format-badge-group__list"><span class="badge img_buy_badge"><span class="for-a11y">BundleDiscount_0_복수구매할인</span></span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1469907490" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1469907490/o?ts=" alt="신선지구 오꼬노미야끼 쿠킹박스 500g (2인)" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1469907490" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">9,900</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">신선지구</span>
+     <span class="bannercard-itemcard__title__name">오꼬노미야끼 쿠킹박스 500g (2인)</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+ <!--class 로 넣을경우 -->
+ <li class="format-badge-group__list"><span class="badge img_buy_badge"><span class="for-a11y">BundleDiscount_0_복수구매할인</span></span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="bannercard__footer">
+    <div class="bannercard__footer__more">
+
+     <a href="http://www.g9.co.kr/Display/BrandShop/600" class="bannercard__footer__more__link" data-area-code="300001419" data-area-type="utility">
+             <span class="bannercard__footer__more__title">오늘은 내가 고독한 미식가</span>
+      <i class="icon sp-itemcard arrow2_bk_right">스토어 더보기화살표</i>
+     </a>
+    </div>
+  </div>
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=23317" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;14&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/09/11/ae69997e0fa34a75.jpg" alt="금-19-골프" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=23317" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;14&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">한 타만 더 줄이자!</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">골프가 쉬워지는 정보와</span>
+        <span class="bannercard__visual__summary__row ellipsis">타수가 달라지는 골프 용품</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="bannercard__body">
+   <div class="bannercard-item-group">
+    <ul class="bannercard-item-group__list">
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/773661015" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/773661015/o?ts=15371764445370000" alt="핑 삼양정품 핑 G400 하이브리드 유틸리티 우드" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/773661015" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">310,000</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">핑</span>
+     <span class="bannercard-itemcard__title__name">삼양정품 핑 G400 하이브리드 유틸리티 우드</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+   </ul>
+  </div>
+ </div>
+
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1224813265" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1224813265/o?ts=15371743422030000" alt="핑 삼양정품 핑 NEW G 드라이버 일반/SFT/LST" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1224813265" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">430,000</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">핑</span>
+     <span class="bannercard-itemcard__title__name">삼양정품 핑 NEW G 드라이버 일반/SFT/LST</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1416451664" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1416451664/o?ts=15350236279330000" alt="타이틀리스트 (현대Hmall)2018년 타이틀리스트 DT TRUSOFT 골프공 / 12알" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1416451664" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">25,760</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">타이틀리스트</span>
+     <span class="bannercard-itemcard__title__name">(현대Hmall)2018년 타이틀리스트 DT TRUSOFT 골프공 / 12알</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="bannercard__footer">
+    <div class="bannercard__footer__more">
+
+     <a href="http://rpp.g9.co.kr/?exhib=23317" class="bannercard__footer__more__link" data-area-code="300001419" data-area-type="utility">
+             <span class="bannercard__footer__more__title">자세만큼 장비가 중요한 골프</span>
+      <i class="icon sp-itemcard arrow2_bk_right">스토어 더보기화살표</i>
+     </a>
+    </div>
+  </div>
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=23448" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;15&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/10/15/88f4db651247414b.jpg" alt="금일-19.5-베스킨라빈스" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=23448" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;15&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">베스킨라빈스를 찾아온</span>
+        <span class="bannercard__visual__summary__row ellipsis">사랑스러운 세서미 스트리트</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">이달의 맛 아이스크림을 즐겨보세요</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="bannercard__body">
+   <div class="bannercard-item-group">
+    <ul class="bannercard-item-group__list">
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1502572229" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1502572229/o?ts=" alt="배스킨라빈스 몬스터마시멜로 싱글킹 아이스크림 (20% 혜택)" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1502572229" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">2,800</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">배스킨라빈스</span>
+     <span class="bannercard-itemcard__title__name">몬스터마시멜로 싱글킹 아이스크림 (20% 혜택)</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1502574462" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1502574462/o?ts=" alt="배스킨라빈스 와글와글 세서미스트리트 (10% 혜택)" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1502574462" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">24,300</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">배스킨라빈스</span>
+     <span class="bannercard-itemcard__title__name">와글와글 세서미스트리트 (10% 혜택)</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1502573979" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1502573979/o?ts=" alt="배스킨라빈스 몬스터마시멜로 와츄원쉐이크 (Regular) (25% 혜택)" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1502573979" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">3,600</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">배스킨라빈스</span>
+     <span class="bannercard-itemcard__title__name">몬스터마시멜로 와츄원쉐이크 (Regular) (25% 혜택)</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="bannercard__footer">
+    <div class="bannercard__footer__more">
+
+     <a href="http://rpp.g9.co.kr/?exhib=23448" class="bannercard__footer__more__link" data-area-code="300001419" data-area-type="utility">
+             <span class="bannercard__footer__more__title">I Love BaskinRobbins 31</span>
+      <i class="icon sp-itemcard arrow2_bk_right">스토어 더보기화살표</i>
+     </a>
+    </div>
+  </div>
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=20704" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;16&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/09/28/16f2e76ce8b34961.jpg" alt="금-20-냉장고정리" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=20704" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;16&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">신선지구에도 가을이 왔어요</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">가을 맞아 냉장고 정리하고</span>
+        <span class="bannercard__visual__summary__row ellipsis">신선한 가을 재료로 채워보세요</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="bannercard__body">
+   <div class="bannercard-item-group">
+    <ul class="bannercard-item-group__list">
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1485059753" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1485059753/o?ts=15356041575200000" alt="신선지구 참조은 티라미수 크림모찌 12입 세트" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1485059753" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">12,900</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">신선지구</span>
+     <span class="bannercard-itemcard__title__name">참조은 티라미수 크림모찌 12입 세트</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1475242686" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1475242686/o?ts=" alt="신선지구 특수부위 갈매기살/항정살/가브리살 400g*2팩" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1475242686" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">10,900</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">신선지구</span>
+     <span class="bannercard-itemcard__title__name">특수부위 갈매기살/항정살/가브리살 400g*2팩</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+ <!--class 로 넣을경우 -->
+ <li class="format-badge-group__list"><span class="badge img_buy_badge"><span class="for-a11y">BundleDiscount_0_복수구매할인</span></span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1466515438" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1466515438/o?ts=" alt="신선지구 간편한 아침 모닝죽 모음전(7인분)" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1466515438" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">10,900</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">신선지구</span>
+     <span class="bannercard-itemcard__title__name">간편한 아침 모닝죽 모음전(7인분)</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="bannercard__footer">
+    <div class="bannercard__footer__more">
+
+     <a href="http://rpp.g9.co.kr/?exhib=20704" class="bannercard__footer__more__link" data-area-code="300001419" data-area-type="utility">
+             <span class="bannercard__footer__more__title">냉장고도 다이어트가 필요해</span>
+      <i class="icon sp-itemcard arrow2_bk_right">스토어 더보기화살표</i>
+     </a>
+    </div>
+  </div>
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=22590" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;17&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/10/05/4b66962349b24633.jpg" alt="목토-21-라이카" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=22590" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;17&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">지극히 평범한 순간도</span>
+        <span class="bannercard__visual__summary__row ellipsis">라이카의 렌즈를 통과하는 순간</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">특별한 히스토리가 됩니다</span>
+        <span class="bannercard__visual__summary__row ellipsis">독일 명품 카메라, 라이카</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="bannercard__body">
+   <div class="bannercard-item-group">
+    <ul class="bannercard-item-group__list">
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1497323650" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1497323650/o?ts=" alt="라이카 즉석카메라 소포트 블랙(sofort black)" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1497323650" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">430,000</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">라이카</span>
+     <span class="bannercard-itemcard__title__name">즉석카메라 소포트 블랙(sofort black)</span>
+    </span>
+   </a>
+  </div>
+
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1497322639" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1497322639/o?ts=15383571608000000" alt="라이카 즉석카메라 소포트 민트(sofort mint)" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1497322639" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">430,000</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">라이카</span>
+     <span class="bannercard-itemcard__title__name">즉석카메라 소포트 민트(sofort mint)</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1497328262" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1497328262/o?ts=15383576327570000" alt="라이카 디지털카메라 C-lux light-gold" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1497328262" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">1,380,000</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">라이카</span>
+     <span class="bannercard-itemcard__title__name">디지털카메라 C-lux light-gold</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/66bb63c81c80421e.png" alt="1001_카드사X프리미엄지구_7%할인"><span class="for-a11y">PromotionTag_7938</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="bannercard__footer">
+    <div class="bannercard__footer__more">
+
+     <a href="http://rpp.g9.co.kr/?exhib=22590" class="bannercard__footer__more__link" data-area-code="300001419" data-area-type="utility">
+             <span class="bannercard__footer__more__title">Chic and Classic, Leica</span>
+      <i class="icon sp-itemcard arrow2_bk_right">스토어 더보기화살표</i>
+     </a>
+    </div>
+  </div>
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=22490" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;18&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/10/01/a56e77628834435b.jpg" alt="월일-22-주얼리" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=22490" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;18&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">단점은 가리고 장점을 살리는</span>
+        <span class="bannercard__visual__summary__row ellipsis">주얼리 선택 가이드</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">잘 고른 귀걸이 하나로</span>
+        <span class="bannercard__visual__summary__row ellipsis">그날의 인상이 달라지는 마법</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="bannercard__body">
+   <div class="bannercard-item-group">
+    <ul class="bannercard-item-group__list">
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/836927961" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/836927961/o?ts=" alt="심플 체인 롱 귀걸이 / 14K GOLD 드롭 귀걸이/ 미니아트" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/836927961" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">23,580</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand"></span>
+     <span class="bannercard-itemcard__title__name">심플 체인 롱 귀걸이 / 14K GOLD 드롭 귀걸이/ 미니아트</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/10/04/a7aed26b5b284d9b.png" alt="1004_카드사X백화점&amp;홈쇼핑_5%할인"><span class="for-a11y">PromotionTag_7943</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/985141019" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/985141019/o?ts=" alt="스톤헨지 실버 드롭 귀걸이 SC0523" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/985141019" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">31,200</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">스톤헨지</span>
+     <span class="bannercard-itemcard__title__name">실버 드롭 귀걸이 SC0523</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/10/04/a7aed26b5b284d9b.png" alt="1004_카드사X백화점&amp;홈쇼핑_5%할인"><span class="for-a11y">PromotionTag_7943</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/924242016" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/924242016/o?ts=" alt="디디에두보  빠른배송 [수지 귀걸이]시그니처D 드롭귀걸이 JDREPSF40ZC" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/924242016" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">178,200</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">디디에두보</span>
+     <span class="bannercard-itemcard__title__name"> 빠른배송 [수지 귀걸이]시그니처D 드롭귀걸이 JDREPSF40ZC</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/10/04/a7aed26b5b284d9b.png" alt="1004_카드사X백화점&amp;홈쇼핑_5%할인"><span class="for-a11y">PromotionTag_7943</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="bannercard__footer">
+    <div class="bannercard__footer__more">
+
+     <a href="http://rpp.g9.co.kr/?exhib=22490" class="bannercard__footer__more__link" data-area-code="300001419" data-area-type="utility">
+             <span class="bannercard__footer__more__title">주얼리로 포인트 주고 싶은 날</span>
+      <i class="icon sp-itemcard arrow2_bk_right">스토어 더보기화살표</i>
+     </a>
+    </div>
+  </div>
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=20645" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;19&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/09/10/746ae17fecf0456d.jpg" alt="금일-23-혼자놀기" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=20645" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;19&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">다들 잘 있어요?</span>
+        <span class="bannercard__visual__summary__row ellipsis">나는 오늘 혼자 놀았어요</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">너무 바빠 함께하지 못 해 아쉽지만</span>
+        <span class="bannercard__visual__summary__row ellipsis">혼자라도 잘 놀고 있으니 내 걱정은 말아요</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="bannercard__body">
+   <div class="bannercard-item-group">
+    <ul class="bannercard-item-group__list">
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1338629884" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1338629884/o?ts=" alt="61건반 마이크포함 디지털피아노" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1338629884" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">26,800</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand"></span>
+     <span class="bannercard-itemcard__title__name">61건반 마이크포함 디지털피아노</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/2829603d64024aca.png" alt="1001_카드사X해외직구_2천원할인"><span class="for-a11y">PromotionTag_7945</span></li>
+ <!--class 로 넣을경우 -->
+ <li class="format-badge-group__list"><span class="badge img_coupon_badge_overseas"><span class="for-a11y">DealPromotion_0_해외직구</span></span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1326657912" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1326657912/o?ts=" alt="E SKATEBOARD 전동 스케이트보드 국산배터리 무선조종" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1326657912" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">108,290</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand"></span>
+     <span class="bannercard-itemcard__title__name">E SKATEBOARD 전동 스케이트보드 국산배터리 무선조종</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/2829603d64024aca.png" alt="1001_카드사X해외직구_2천원할인"><span class="for-a11y">PromotionTag_7945</span></li>
+ <!--class 로 넣을경우 -->
+ <li class="format-badge-group__list"><span class="badge img_coupon_badge_overseas"><span class="for-a11y">DealPromotion_0_해외직구</span></span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/829504554" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/829504554/o?ts=" alt="Hubsan 협산 H502S 최고의 가성비  GPS 드론" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/829504554" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">152,640</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand"></span>
+     <span class="bannercard-itemcard__title__name">Hubsan 협산 H502S 최고의 가성비  GPS 드론</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/2829603d64024aca.png" alt="1001_카드사X해외직구_2천원할인"><span class="for-a11y">PromotionTag_7945</span></li>
+ <!--class 로 넣을경우 -->
+ <li class="format-badge-group__list"><span class="badge img_coupon_badge_overseas"><span class="for-a11y">DealPromotion_0_해외직구</span></span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="bannercard__footer">
+    <div class="bannercard__footer__more">
+
+     <a href="http://rpp.g9.co.kr/?exhib=20645" class="bannercard__footer__more__link" data-area-code="300001419" data-area-type="utility">
+             <span class="bannercard__footer__more__title">일당백 혼자놀템</span>
+      <i class="icon sp-itemcard arrow2_bk_right">스토어 더보기화살표</i>
+     </a>
+    </div>
+  </div>
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=22453" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;20&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/09/28/cdc7b7b17f744545.jpg" alt="월일-25-G9 Lite 선물" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=22453" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;20&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">지구에서 가장 가벼운 쇼핑 G9 Lite</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">가격 부담이 없으니 괜히 선물하고 싶다</span>
+        <span class="bannercard__visual__summary__row ellipsis">내 자신 또는 누군가를 위한 #선물편</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="bannercard__body">
+   <div class="bannercard-item-group">
+    <ul class="bannercard-item-group__list">
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1490649230" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1490649230/o?ts=15371679305830000" alt="피지오겔 AI 로션 200mL *2개" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1490649230" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">23,900</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">피지오겔</span>
+     <span class="bannercard-itemcard__title__name">AI 로션 200mL *2개</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/27/dd0e91d55c634a6b.png" alt="1001_카드사XG9 Lite_10%할인"><span class="for-a11y">PromotionTag_7916</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1157541176" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1157541176/o?ts=" alt="닥터자르트 시카페어/세라마이딘 인기라인 모음전" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1157541176" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">29,900</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">닥터자르트</span>
+     <span class="bannercard-itemcard__title__name">시카페어/세라마이딘 인기라인 모음전</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/27/dd0e91d55c634a6b.png" alt="1001_카드사XG9 Lite_10%할인"><span class="for-a11y">PromotionTag_7916</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1256503872" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1256503872/o?ts=" alt="바이오더마 립밤 1+1 외 균일가" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1256503872" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">6,900</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">바이오더마</span>
+     <span class="bannercard-itemcard__title__name">립밤 1+1 외 균일가</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/27/dd0e91d55c634a6b.png" alt="1001_카드사XG9 Lite_10%할인"><span class="for-a11y">PromotionTag_7916</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="bannercard__footer">
+    <div class="bannercard__footer__more">
+
+     <a href="http://rpp.g9.co.kr/?exhib=22453" class="bannercard__footer__more__link" data-area-code="300001419" data-area-type="utility">
+             <span class="bannercard__footer__more__title">마음은 두둑하게 가격은 가볍게</span>
+      <i class="icon sp-itemcard arrow2_bk_right">스토어 더보기화살표</i>
+     </a>
+    </div>
+  </div>
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://rpp.g9.co.kr/?exhib=20438" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;21&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/09/10/31685bcf7b7f41a1.jpg" alt="월일-26-브리치" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://rpp.g9.co.kr/?exhib=20438" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;21&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">올 가을 패션 트렌드가 궁금하다면</span>
+        <span class="bannercard__visual__summary__row ellipsis">알려 드리는 것이 브리치!</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">해외 브랜드부터 로드샵까지</span>
+        <span class="bannercard__visual__summary__row ellipsis">브리치에서 정답을 알려드릴게요</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+  <div class="bannercard__body">
+   <div class="bannercard-item-group">
+    <ul class="bannercard-item-group__list">
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1443279316" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1443279316/o?ts=15395657659000000" alt="바이름 [브리치] 라뷰하트래터링니트가디건 외" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1443279316" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;1&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">29,900</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand">바이름</span>
+     <span class="bannercard-itemcard__title__name">[브리치] 라뷰하트래터링니트가디건 외</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/dc8c1cde3b4349bd.png" alt="1019_카드사X패션편집샵_15%할인"><span class="for-a11y">PromotionTag_7951</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1481711152" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1481711152/o?ts=" alt="땡큐 THANK U / 팬팬호피블라우스" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1481711152" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;2&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">22,000</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand"></span>
+     <span class="bannercard-itemcard__title__name">땡큐 THANK U / 팬팬호피블라우스</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/dc8c1cde3b4349bd.png" alt="1019_카드사X패션편집샵_15%할인"><span class="for-a11y">PromotionTag_7951</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+       <li class="bannercard-item-group__item">
+        
+<div class="bannercard-itemcard">
+
+ <div class="bannercard-itemcard__img">
+  <a href="/Display/VIP/Index/1476520078" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+   <img class="itemcard lazy" src="http://image.g9.co.kr/g/1476520078/o?ts=" alt="앤언니 / 벨트Set 트렌치 롱 플레어 랩 원피스" style="display: inline;">
+  </a>
+ </div>
+
+ <div class="bannercard-itemcard__info">
+  <div class="bannercard-itemcard__info__major">
+   <a href="/Display/VIP/Index/1476520078" class="bannercard-itemcard__link" data-area-code="300001418" data-area-type="item" data-area-parameter="{&quot;asn&quot;:&quot;3&quot;}">
+    <p class="bannercard-itemcard__info__price">
+      <span class="format-price">
+       <strong class="format-price__value">75,000</strong>
+       <span class="formmat-price__unit for-a11y">원</span>
+      </span>
+    </p>
+    <span class="bannercard-itemcard__info__title ellipsis">
+     <span class="bannercard-itemcard__title__brand"></span>
+     <span class="bannercard-itemcard__title__name">앤언니 / 벨트Set 트렌치 롱 플레어 랩 원피스</span>
+    </span>
+   </a>
+  </div>
+
+  <div class="bannercard-itemcard__info__badge">
+   <ul class="format-badge-group">
+ <!--img tag로 넣을경우 -->
+ <li class="format-badge-group__list"><img src="http://image.g9.co.kr/i/2018/09/28/dc8c1cde3b4349bd.png" alt="1019_카드사X패션편집샵_15%할인"><span class="for-a11y">PromotionTag_7951</span></li>
+   </ul>
+  </div>
+ </div>
+
+</div>
+
+       </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="bannercard__footer">
+    <div class="bannercard__footer__more">
+
+     <a href="http://rpp.g9.co.kr/?exhib=20438" class="bannercard__footer__more__link" data-area-code="300001419" data-area-type="utility">
+             <span class="bannercard__footer__more__title">센스있는 패션 큐레이터 브리치</span>
+      <i class="icon sp-itemcard arrow2_bk_right">스토어 더보기화살표</i>
+     </a>
+    </div>
+  </div>
+
+ </div>
+
+       </li>
+       <li class="format-itemcard-list__item" style="display: none;">
+        
+ <div class="bannercard">
+
+  <div class="bannercard__visual">
+   <div class="bannercard__visual__img">
+
+    <a href="http://www.g9.co.kr/Display/Category/400000157/500001242" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;22&quot;}">
+     <img src="http://image.g9.co.kr/i/2018/10/05/67539dd561ce4a36.jpg" alt="월일-27-G9다이렉트" class="img-bannercard">
+    </a>
+   </div>
+   <div class="bannercard__visual__summary">
+    <div class="bannercard__visual__summary_bg">
+     <a href="http://www.g9.co.kr/Display/Category/400000157/500001242" class="bannercard__link" data-area-code="300001417" data-area-type="link" data-area-parameter="{&quot;asn&quot;:&quot;22&quot;}">
+      <strong class="bannercard__visual__summary__title">
+       <span class="bannercard__visual__summary__row ellipsis">뿌린 대로 거두는 5% 캐시백</span>
+      </strong>
+      <p class="bannercard__visual__summary__subtitle">
+       <span class="bannercard__visual__summary__row ellipsis">G9 바로접속 구매 고객에 5% 캐시백 적립</span>
+        <span class="bannercard__visual__summary__row ellipsis">대상 상품 확인하러 GO!</span>
+      </p>
+     </a>
+    </div>
+   </div>
+  </div>
+
+ 
+
+  
+
+ </div>
+
+       </li>
+     </ul>
+    </div>
+     
+   </div>
+  </div>
+ </div>
+
+</div>
+
+
+
+
+
+
+
+
+            </div>
+
+<?php include_once("../../inc/bottom.php"); ?>      

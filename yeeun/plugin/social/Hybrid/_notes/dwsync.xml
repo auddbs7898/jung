@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Endpoint.php" server="auddbs7898.cafe24.com" local="131932026279305530" remote="131804266200000000" Dst="0" />
+<file name="Auth.php" server="auddbs7898.cafe24.com" local="131932026279395535" remote="131804266200000000" Dst="0" />
+<file name="Error.php" server="auddbs7898.cafe24.com" local="131932026279395535" remote="131804266200000000" Dst="0" />
+<file name="Exception.php" server="auddbs7898.cafe24.com" local="131932026279795558" remote="131804266200000000" Dst="0" />
+<file name="Logger.php" server="auddbs7898.cafe24.com" local="131932026279845560" remote="131804266200000000" Dst="0" />
+<file name="Provider_Adapter.php" server="auddbs7898.cafe24.com" local="131932026279895563" remote="131804266200000000" Dst="0" />
+<file name="Provider_Model.php" server="auddbs7898.cafe24.com" local="131932026280275585" remote="131804266200000000" Dst="0" />
+<file name="Provider_Model_OAuth1.php" server="auddbs7898.cafe24.com" local="131932026280375591" remote="131804266200000000" Dst="0" />
+<file name="Provider_Model_OAuth2.php" server="auddbs7898.cafe24.com" local="131932026280375591" remote="131804266200000000" Dst="0" />
+<file name="Provider_Model_OpenID.php" server="auddbs7898.cafe24.com" local="131932026280805615" remote="131804266200000000" Dst="0" />
+<file name="Storage.php" server="auddbs7898.cafe24.com" local="131932026284005798" remote="131804266200000000" Dst="0" />
+<file name="StorageInterface.php" server="auddbs7898.cafe24.com" local="131932026284105804" remote="131804266200000000" Dst="0" />
+<file name="User_Contact.php" server="auddbs7898.cafe24.com" local="131932026286895964" remote="131804266200000000" Dst="0" />
+<file name="User.php" server="auddbs7898.cafe24.com" local="131932026286985969" remote="131804266200000000" Dst="0" />
+<file name="User_Activity.php" server="auddbs7898.cafe24.com" local="131932026286985969" remote="131804266200000000" Dst="0" />
+<file name="index.html" server="auddbs7898.cafe24.com" local="131932026287485997" remote="131804266200000000" Dst="0" />
+<file name="User_Profile.php" server="auddbs7898.cafe24.com" local="131932026287536000" remote="131804266200000000" Dst="0" />
+</dwsync>

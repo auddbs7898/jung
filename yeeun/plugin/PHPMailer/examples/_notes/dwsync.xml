@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="DKIM.phps" server="auddbs7898.cafe24.com" local="131932024332434175" remote="131804265600000000" Dst="0" />
+<file name="contactform.phps" server="auddbs7898.cafe24.com" local="131932024332474177" remote="131804265600000000" Dst="0" />
+<file name="code_generator.phps" server="auddbs7898.cafe24.com" local="131932024332514179" remote="131804265600000000" Dst="0" />
+<file name="contents.html" server="auddbs7898.cafe24.com" local="131932024332984206" remote="131804265600000000" Dst="0" />
+<file name="contentsutf8.html" server="auddbs7898.cafe24.com" local="131932024333074212" remote="131804265600000000" Dst="0" />
+<file name="exceptions.phps" server="auddbs7898.cafe24.com" local="131932024333074212" remote="131804265600000000" Dst="0" />
+<file name="gmail.phps" server="auddbs7898.cafe24.com" local="131932024333464234" remote="131804265600000000" Dst="0" />
+<file name="gmail_xoauth.phps" server="auddbs7898.cafe24.com" local="131932024333524237" remote="131804265600000000" Dst="0" />
+<file name="index.html" server="auddbs7898.cafe24.com" local="131932024341674703" remote="131804265600000000" Dst="0" />
+<file name="mail.phps" server="auddbs7898.cafe24.com" local="131932024341734707" remote="131804265600000000" Dst="0" />
+<file name="mailing_list.phps" server="auddbs7898.cafe24.com" local="131932024342044725" remote="131804265600000000" Dst="0" />
+<file name="pop_before_smtp.phps" server="auddbs7898.cafe24.com" local="131932024342074726" remote="131804265600000000" Dst="0" />
+<file name="send_file_upload.phps" server="auddbs7898.cafe24.com" local="131932024374296569" remote="131804265600000000" Dst="0" />
+<file name="send_multiple_file_upload.phps" server="auddbs7898.cafe24.com" local="131932024374886603" remote="131804265600000000" Dst="0" />
+<file name="sendmail.phps" server="auddbs7898.cafe24.com" local="131932024374946606" remote="131804265600000000" Dst="0" />
+<file name="signed-mail.phps" server="auddbs7898.cafe24.com" local="131932024374986609" remote="131804265600000000" Dst="0" />
+<file name="smtp.phps" server="auddbs7898.cafe24.com" local="131932024375446635" remote="131804265600000000" Dst="0" />
+<file name="smtp_check.phps" server="auddbs7898.cafe24.com" local="131932024375446635" remote="131804265600000000" Dst="0" />
+<file name="smtp_no_auth.phps" server="auddbs7898.cafe24.com" local="131932024375486637" remote="131804265600000000" Dst="0" />
+<file name="ssl_options.phps" server="auddbs7898.cafe24.com" local="131932024375726651" remote="131804265600000000" Dst="0" />
+</dwsync>

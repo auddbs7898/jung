@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>폼만들기</title>
+<style>
+body, ul, li, div, h1{ margin:0;  padding:0; }
+ul, li{ list-style:none}
+form{ }
+fieldset{ border:none}
+legend{ display:none}
+#wrap{ background-color:#ccc}
+#container{ width:600px; margin:0 auto}
+
+.loadContent{ height:150px; overflow-y:scroll; overflow-x: hidden; border:1px solid #f1f1f1}
+.loadContent pre{ width:500px; margin:0 auto; font-size:11px}
+.loginForm{ padding:100px 0}
+.loginForm h1{ text-align:center}
+/*.loginForm input[type='checkbox']{ display:none}*/
+.loginForm input[type='submit'],
+.loginForm input[type='reset']{ display:inline-block; width:calc(50% - 10px); border:none; color:white; font-size:23px; padding:15px 0; margin:0 5px}
+.loginForm input[type='submit']{ background-color:#060}
+.loginForm input[type='reset']{ background-color:#222}
+
+</style>
+<script
+              src="https://code.jquery.com/jquery-2.2.4.min.js"
+              integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+              crossorigin="anonymous"></script>
+<script>
+$(function(){
+    var ckinput =$("#formUL li:not(:first) input[name^='join']");
+    //전체체크를 제외한 체크박스들(정렬)
+    var chkNum = ckinput.length; //전체체크를 제외한 체크박스들 개수
+    var chkMust = $("input[name^='join'][required]");
+    //필수체크를 요구하는 체크박스들(정렬)
+    $(".loadContent").each(function(index, element) {
+        var dataConect = $(this).attr("data-form");//태그속성으로 데이터연동키 삽입
+        $(this).find("pre").load("joincon.html  #"+dataConect);
+    });
+    var status = ""; //체크박스들을 한꺼번에 체크할 변수
+    $("input[name='joinAll']").change(function(e) {
+    //체크박스등과 같은 이벤트를 통해서 값이 변하는 경우 change이벤트를 사용
+     if($(this).is(":checked")){
+         status=true;
+     }else{
+        status =false;
+     }
+     ckinput.prop("checked" , status); //attr로 처리불가
+    });
+     
+    $("input[type='submit']").click(function(e) {   
+    if(!chkMust.prop('checked')){    //메서드중에 true와 ,false값을 리턴하는 메서드를 이용한다.
+    //필수가 체크되지 않았다면
+        alert("네이버 이용약관과 개인정보 수집 및 이용에 대한 안내 모두 동의해주세요.");
+        e.preventDefault(); //submit의 기본기능상실
+        $("label[for='joinAll']").css("color",'red');
+    }
+    });   
+    ckinput.change(function(e) { //체크박스들이 체크상태가 변할때마다
+        //제일중요!!!! 체크할때마다 체크해야하니깐
+        var chkStatus = $("#formUL li:not(:first) input[name^='join']:checked").length;       
+        if(chkStatus == chkNum){ //체크된 체크박스와 전체체크박스들의 개수가 같다면
+            $("input[name='joinAll']").prop('checked', true);
+            //all체크박스체크걸기
+        }else{
+            $("input[name='joinAll']").prop('checked', false);
+            }
+    });
+   
+});
+</script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="container" class="loginForm">
+        <h1><img src="https://static.nid.naver.com/images//ui/join/m_naver_logo.png" alt=""></h1>
+        <form action="" name="fm">
+            <fieldset>
+                <legend>
+                    회원양식폼
+                </legend>
+                <ul id="formUL">
+                    <li >
+                        <p><input type="checkbox" name="joinAll" id="joinAll"><label for="joinAll"><span>이용약관, 개인정보 수집 및 이용, 위치정보 이용약관(선택),<br>
+프로모션 안내 메일 수신(선택)에 모두 동의합니다.</span></label></p>
+                    </li>
+                    <li>
+                        <p><input type="checkbox" name="join2" id="join2" required><label for="join2"><span>개인정보 수집 및 이용에 대한 안내(필수)</span></label></p>
+                        <div class="loadContent" data-form="join1">
+                          <pre>
+                         
+                          </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <p><input type="checkbox" name="join3" id="join3" required><label for="join3"><span>개인정보 수집 및 이용에 대한 안내(필수)</span></label></p>
+                        <div class="loadContent" data-form="join2">
+                            <pre>
+                         
+                          </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <p><input type="checkbox" name="join4" id="join4"><label for="join4"><span>개인정보 수집 및 이용에 대한 안내(필수)</span></label></p>
+                        <div class="loadContent"  data-form="join13">
+                          <pre>
+                         
+                          </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <p><input type="checkbox" name="join5" id="join5"><label for="join5"><span>개인정보 수집 및 이용에 대한 안내(필수)</span></label></p>                       
+                    </li>
+                    <li><input type="reset" value="비동의"><input type="submit" value="동의"></li>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>

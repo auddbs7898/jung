@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+
+</style>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script>
+  $(function(){
+  $.ajax({
+	  type :'GET',
+	  url :'category.json',
+	  dataType:"text",
+	  success: function(data){
+		  var json = eval("("+data+")");//array
+		  var output = "";
+		 for (var i in json){
+		  output += "<li class='"+json[i]['cateCss']+"'><a href='"+json[i]['ctLink']+"'target='"+json[i]['linkType']+"'>"+json[i]['ctName']+"</a>";
+		  
+		 if(json[i]['sMenu']){
+		  output += "<div class='d2'>";
+		  for(var j in json[i]['sLa']){
+			  output+="<a href='"+json[i]['sLa'][j][1]+"'>"+json[i]['sLa'][j][0]+"</a>";
+			  } 
+		  output += "</div>";
+		  }
+		 
+		 output += "</li>";
+		 }
+		  $("#gnb").html(output);
+		 /////프로그램 중요 부분///////// 
+		  },
+	  error: function(){
+		  alert("뭔가 에러났다");
+		  }
+	  
+	  
+	  });
+  
+  });
+  </script>
+</head>
+
+<body>
+<header id="hd">
+ <h1>로고</h1>
+  <ul id="gnb"></ul>
+
+</header>
+</body>
+</html>

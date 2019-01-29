@@ -1,0 +1,186 @@
+<?php 
+$bid = $_GET['b_id'];
+$bno = $_GET['b_no'];
+include_once("../top.php"); 
+?>
+<style>
+.gnb-logo{ font-size:22px; font-weight:normal}
+.gnb-logo a{color:black; }
+
+.direction{position: absolute;
+     z-index:10; width:100%}
+.direction a{display:inline-block; vertical-align:middle; font-size: 18px;
+color: #222; line-height:1; padding:0 10px}	 
+.direction a.right,
+.direction a.left{  width:50px; height:50px;background-image:url(http://brand.seoulcraftcenter.kr/img/buttons.png);
+	background-repeat: no-repeat; font:0 / 0 all; text-indent: -9999px; padding:0}
+.direction a.right{  background-position: -250px -50px; }
+.direction a.left{  background-position: -250px 0; }
+.direction a.opa{ background-image:none  }
+.comp--home-contents .format-itemcard-list{ column-width:auto; column-gap:0; max-width:1200px; margin:0 auto}
+.bannercard__visual .bannercard__visual__summary{ margin-bottom:0; display:inline-block; vertical-align:bottom; width: auto; height:auto}
+.bannercard__visual .bannercard__visual__img{ max-width:1200px;display:inline-block; vertical-align:bottom;  }
+.comp--home-banner .home-banner-wrap{ max-width:1200px; margin:0 auto}
+.direction{ top:-50px; max-width: 320px; right: 0; width:100%; text-align:right}
+.bannercard__visual__summary__subtitle span:nth-child(2){ font-size:18px; color:#222}
+</style>
+<script>
+var courl = "<?php echo isset($bid)? $bid: 'main'; ?>";
+var coBrand = "brand.html?b_id="+courl;
+var copro = "<?php echo isset($bno)? $bno: 0; ?>";
+var coBrandPro ="brand.html?b_id="+courl+"&b_no="+copro;
+copro =parseInt(copro);
+var pBrandPro ="detail.html?b_id="+courl+"&b_no="+(copro-1);
+var nBrandPro ="detail.html?b_id="+courl+"&b_no="+(copro+1);
+
+$(document).ready(function(){
+        $('#mainlisttrigger').click(function(){
+        
+            $.ajax({
+               type: "GET"
+               ,dataType: "xml"
+               ,url: "<? echo $bid; ?>/xml/brand.xml"
+               ,success: function(xml){	
+			     
+                   var xmlData = $(xml).find("info");				   
+				   var titleLogo = xmlData.find("브랜드명").text();
+				   var titleLogoimg = xmlData.find("로고경로").text();
+				 
+				   
+				  
+				  
+				   
+				   var contentStr = "";
+						
+                    //   
+                            contentStr += "<div class='br_infomation'>"+ xmlData.find("업체소개").html() +"</div>"
+										  +"<p><em><a href='tel:'>"+ xmlData.find("연락처").text() +"</a></em></p>"
+                                          +"<p><em><a href='"+ xmlData.find("사이트주소").text() +"' target='_blank'>"+ xmlData.find("사이트주소").text() +"</a></em></p>"
+                                          +"<p><a href='mailto:"+ xmlData.find("이메일").html() +"'>"+ xmlData.find("이메일").html() +"</a></p>"
+										  +"<address class='font12'>"+ xmlData.find("SNS").html() +"<br>"
+										  + "</address>";
+							
+					
+						    var liNum =$("#format-itemcard-list__item");
+							 var liNumimg =liNum.find(".img-bannercard");
+							 var liNumTitle = liNum.find(".bannercard__visual__summary__title .bannercard__visual__summary__row"); 
+							 var liNumsubTitle = liNum.find(".bannercard__visual__summary__subtitle  .bannercard__visual__summary__row"); 
+							 var liNumHref = liNum.find(".bannercard__link");
+							 
+						    var proData = xmlData.find("작품들").find("work").eq("<? echo $bno; ?>");
+							var proSize =proData.find('data7').text();
+							var proDetail = proData.find('data12').text();							
+							var proSizeArr =proSize.split("/");
+							var proDetailArr =proDetail.split("/");
+							var proSizeOutput= "";
+							var proDetailOutput= "";
+							for(var i in proSizeArr){
+								proSizeOutput += proSizeArr[i]+"<br>";
+							}
+							for(var i in proDetailArr){
+								proDetailOutput += proDetailArr[i]+"<br>";
+							}
+							var proDataNum = xmlData.find("작품들").find("work").length;
+							  	 liNumimg.attr({
+									  "alt":proData.find('data5').text(),
+									  "src":"<? echo $bid; ?>/work/img_<? echo $bno; ?>.jpg"});
+								  liNumTitle.eq(0).html(proData.find('data5').text() );
+								 liNumTitle.eq(1).html( "<p class='price'>" +proData.find('data11').text()+"</p>[사이즈] " + proSizeOutput+"<p>[재료] " +proData.find('data9').text()+"</p>");
+						    liNumHref.attr("href","#none");
+								liNumsubTitle.eq(0).html("[색상] "+proData.find('data8').text() + "<br>" +"[소재] "+proData.find('data9').text() );
+								
+								liNumsubTitle.eq(1).html(" "+proDetailOutput  );
+								liNumsubTitle.eq(2).html(" "+proData.find('data13').text()  );
+								var lastDataText =proData.find('data14').text();
+								lastDataText = lastDataText.replace('/', '<br>');
+								liNumsubTitle.eq(3).html(lastDataText  );
+						
+			
+										  
+										  
+							
+							$("#footer_contact").prepend(contentStr);	
+							var abtn ="";
+							if( copro > 0 ) abtn +="<a href="+pBrandPro+" class='left' >이전</a>";
+							else abtn +="<a href="+"#none"+" class='left opa' >이전</a>";
+							 abtn +="<a href='http:/brand/page/brand.html?b_id=<? echo $bid; ?>' class='brandNm'>"+titleLogo+"</a>";
+							if( copro < (proDataNum-1)) abtn +="<a href="+nBrandPro+" class='right' >다음</a>";  else abtn +="<a href="+"#none"+" class='right opa' >다음</a>";
+							$(".direction").html(abtn);	
+							
+							 
+                    
+$("#footer_contact").prepend("<a title='"+titleLogo+"'  href='http:/brand/page/brand.html?b_id=<? echo $bid; ?>'>"+titleLogo+"</a>");
+
+  
+				  	
+                    }             
+             }); 
+      
+        });
+		$('#mainlisttrigger').trigger('click');
+    });
+</script>
+<div class="comp comp--home-banner">                    
+                    <div class="corner">
+                        
+                        <div class="corner__body">
+                            <div class="home-banner-wrap">
+                                <div class=" direction">
+                                   
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+<div class="comp comp--home-contents">                    
+                    <div class="corner">
+                        
+                        <div class="corner__body">
+                            <div class="format-result">
+                                <div class="format-result__list">
+                                    <ul class="format-itemcard-list">
+                                            <li id="format-itemcard-list__item">
+                                                
+                    <div class="bannercard">
+                
+                        <div class="bannercard__visual">
+                        <div class="bannercard__visual__summary" >
+                                <div class="bannercard__visual__summary_bg">
+                                    <a href="브랜드링크변수" class="bannercard__link" >
+                                        <strong class="bannercard__visual__summary__title">
+                                            <span class="bannercard__visual__summary__row ellipsis">브랜드제목</span>
+                                                <span class="bannercard__visual__summary__row ellipsis">호실</span>
+                                        </strong>
+                                        <p class="bannercard__visual__summary__subtitle">
+                                            <span class="bannercard__visual__summary__row " style="margin-bottom:10px">소재분류</span>
+                                            <span class="bannercard__visual__summary__row " style="margin-bottom:10px">취급주의사항</span>
+                                            <span class="bannercard__visual__summary__row ">비고</span>
+                                            <span class="bannercard__visual__summary__row " style="color:black; margin-top:10px; ">비고</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bannercard__visual__img" >
+                
+                                <a href="브랜드링크변수" class="bannercard__link" >
+                                    <img src="page/폴더/img_대표이미지번호.jpg" alt="브랜드명" class="img-bannercard" >
+                                </a>
+                            </div>
+                            
+                        </div>
+                
+                        
+                
+                        
+                
+                    </div>
+                
+                                            </li>
+                                    </ul>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+<?php include_once("../bottom.php"); ?>

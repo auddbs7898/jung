@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+
+html{overflow-y:scroll; font-size:100%; 	font-family: 'noto sans KR', arial, sans-serif;}
+@media all and (max-width:737px) {
+  html{font-size:51%;}
+}
+html,body{position:relative; min-height:100%;height:100%;font-family:'noto sans KR',Dotum,sans-serif; line-height:1;color:#666666; word-break:keep-all; margin:0;padding:0; letter-spacing:-1px;}
+legend,caption{visibility:hidden;width:0;height:0;font-size:0;line-height:0}
+em{font-style:normal}
+textarea{width:94%;padding:10px;border:1px solid #b6b6b6;font-size:13px;color:#333; font-family:'noto sans KR',sans-serif;}
+select,input[type=text]{height:41px;margin:0;padding:0 8px;font-size:13px;line-height:40px;font-family:'noto sans KR',sans-serif;vertical-align:middle;border:0px;;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:#666666;border:1px solid #dbdbdb;}
+select{padding:0 0 0 10px; font-size:13px;}
+select.black{border:1px solid #666666; background:#ffffff;height:40px; line-height:34px; width:141px; font-size:13px; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+input[type=radio],input[type=checkbox]{margin:0px;padding:0px;vertical-align:middle}
+ul,ol,li,dl,dt,dd{list-style:none}
+li{list-style:none;}
+div,ul,ol,li,dl,dt,dd,form,fieldset,p,h1,h2,h3,h4,h5,h6,blockquote,iframe{margin:0;padding:0;}
+img{border:0;vertical-align:top; max-width:100%}
+fieldset{border:0}
+hr{display:none;clear:both}
+table{border-collapse:collapse;font-size:12px;color:#333;table-layout:fixed;border-spacing:0;width:100%;}
+th, td {text-align:center;font-weight:normal;}
+table thead th {font-weight:normal;}
+a,a:link,a:visited,a:active{color:#666666;letter-spacing:normal;text-decoration:none}
+a:hover{color:#666666;letter-spacing:normal;text-decoration:none}
+strong{ font-style: normal; font-family:'noto sans KR',sans-serif; font-weight:bold;}
+label{cursor:pointer;}
+input::-webkit-input-placeholder { color:#666666; }
+input::-moz-placeholder { color:#666666; } /* firefox 19+ */
+input:-ms-input-placeholder { color:#666666; } /* ie */
+input::-moz-placeholder { color:#666666; }
+textarea.inputStyle{border:1px solid #e0e0e0; background:#ffffff;width:292px;height:40px; line-height:40px; font-size:13px;padding:0 15px; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.checkbox label{vertical-align:middle; line-height:13px;}
+.skip, .blind, legend {position:absolute; top:-5000em; width:0; height:0; overflow:hidden; line-height:0; font-size:0;}
+button {overflow:visible; background:transparent; cursor:pointer; border:none; padding:0; margin:0;}
+button::-moz-focus-inner {padding:0; border:0;}
+input[type="text"].inpType02,
+input[type="file"].inpType02,
+input[type="email"].inpType02,
+input[type="password"].inpType02{height:31px; box-sizing:border-box; line-height:29px; border:1px solid #ddd; padding:0 10px;}
+select,
+input{
+  box-shadow: none !important;
+}
+a{
+  font-family:'noto sans KR',sans-serif;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+
+
+
+body,html{height:100%}
+.clfix:after {content: "."; display: block; height: 0px; clear: both; visibility: hidden}
+.clfix {display: inline-block}
+.clfix {display: block}
+* html .clfix {height: 1%} /* Hides from IE-mac */
+.clfix {zoom: 1} /*for IE 5.5-7*/
+
+
+/* paging */
+.paging {text-align: center; margin-top: 40px; position:relative; font-size:0;}
+.paging .btn {border:none; padding:0; line-height: 0; font-size: 0; vertical-align: top; width:34px; height:34px; overflow: hidden; position:relative; z-index:1;}
+.paging img {vertical-align:top;}
+.paging a {font-size:13px; vertical-align: top; display:inline-block; *zoom:1; *display:inline; padding:0 2px; color:#676767; min-width: 34px; height:34px; line-height: 34px; background-color: #fff; box-sizing:border-box;  border:1px solid #ddd; margin:0 -1px; position:relative; z-index:2;}
+.paging span{vertical-align:top;}
+.paging span.pg,
+.paging a.sel {color:#f47526; font-weight:bold; background-color:#fbfbfb; color:#db1d27;  z-index: 3}
+.paging span.empty_msg { border:none !important; font-weight:normal; font-size:13px; color:#ff6600; }
+
+@media all and (max-width:470px) {
+  .paging{padding-bottom:40px;}
+  .paging .btn{width:34px; height:34px;}
+  .paging .btn img{width:34px; height:34px;}
+
+  .paging a{width:34px; height:34px; font-size:12px; line-height:34px; vertical-align:top; min-width: 34px  }
+}
+
+
+
+

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>20180912 광고팝업 / 배너팝업수업</title>
+<link rel="stylesheet" href="/happy/css/common.css" type="text/css">
+<style>
+/*공통*/		
+.container{width:600px; margin:0 auto}	
+.tcw{ color:white}
+.tsskew{ font-style:italic}
+
+#adWrap{ display:inline-block; overflow:hidden; position:relative; text-align:center;background-image: linear-gradient(to bottom right, #a5c9e9, #619ecd);
+padding:10px 10px 0}
+#adWrap .headTitle{ position: relative}
+div[class^='hTitle']{}/*div애들중에 hTitle 로 시작하는 모든애들*/
+.hTitle1{font-size:70px; line-height:150%; font-weight:bold; letter-spacing:-1px;}
+.hTitle1 hr:first-child{ width:250px}
+.hTitle1 hr{ display:block; border:3px solid white; width:200px; margin:0 auto}
+.hTitle2{  color:#036; text-align:left}
+.hTitle3{ position:absolute; top:120px; font-size:30px; font-weight:bold; left:50%; margin-left:-55px; transform:rotate(-20deg)}
+.spBox{ display:inline-block; width:200px}
+
+#adWrap .imgBanner{	position: relative}
+#adWrap .imgBanner .imgTitle{ position:absolute; width:100%; bottom:0}
+#adWrap .imgBanner .imgBox{ margin-top:-110px} 
+</style>
+</head>
+
+<body>
+<div id="adWrap">
+	<div class="container">
+		<div class="headTitle">
+          <div class="hTitle1 tcw tsskew">어머 여기<hr>꼭 지원<hr>해야<span class="spBox">해</span></div>
+            <div class="hTitle2 tsskew">당신의 원<span class="bar"></span>더풀한<br>미래를 위하여</div>
+            <div class="hTitle3">challenge</div>
+        </div>
+		<div class="imgBanner">
+           <div class="imgBox"><img src="http://muplus.co.kr/new/resource/images/main/section02_logo.png"></div>
+           <div class="imgTitle">
+           	<h3 tsskew>당장 이력서 앞으로</h3>
+           	<p>안녕하세요</p>
+           </div>
+        </div>
+	</div>
+</div>
+</body>
+</html>

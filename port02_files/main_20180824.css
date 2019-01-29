@@ -1,0 +1,351 @@
+#ui_wrap {
+	min-width: 1240px;
+}
+#ui_contents {
+	margin: 0px auto; width: 1240px;
+}
+.main_wrap#ui_contents {
+	width: auto;
+}
+#ui_contents img {
+	width: 100%; display: block;
+}
+.hidden {
+	line-height: 0; text-indent: -99999px; font-size: 0px;
+}
+.visual_wrap {
+	background: url("visual_3.jpg") no-repeat top; height: 999px; position: relative;
+}
+.visual_wrap .logo {
+	left: 3%; top: 44px; width: 1240px; display: block; position: absolute;
+}
+.visual_wrap .logo a {
+	width: 152px; height: 63px; display: block;
+}
+.visual_wrap .main_title {
+	left: 8%; top: 250px; display: block; position: absolute;
+}
+.visual_wrap .main_title a {
+	width: 693px; height: 313px; display: block;
+}
+.visual_wrap .btn_apply {
+	left: 8%; width: 1200px; height: 75px; bottom: 277px; display: block; position: absolute;
+}
+.visual_wrap .btn_apply a {
+	background: url("ico_arrowbtn.png") no-repeat 320px; border: 2px solid rgb(217, 32, 39); border-image: none; width: 350px; height: 70px; text-align: center; color: rgb(217, 32, 39); line-height: 72px; text-indent: -10px; font-size: 30px; display: block;
+}
+.visual_wrap .btn_apply a:hover {
+	color: rgb(255, 255, 255); text-decoration: none; background-image: url("ico_arrowbtn_on.png"); background-color: rgb(217, 32, 39);
+}
+.v02.visual_wrap {
+	height: 737px; line-height: 0; text-indent: -99999px; font-size: 0px; background-image: url("visual02.jpg");
+}
+.gift_wrap {
+	background: url("gift_wrap.jpg") no-repeat top; height: 1931px; position: relative;
+}
+.gift_wrap .btn_go {
+	left: 50%; top: 0px; width: 1240px; height: 922px; margin-left: -620px; display: block; position: absolute;
+}
+.gift_wrap .btn_go a {
+	left: 50%; width: 356px; height: 87px; bottom: 0px; line-height: 0; text-indent: -99999px; font-size: 0px; margin-left: 30px; display: block; position: absolute;
+}
+.event_wrap {
+	background: url("event_wrap.jpg") no-repeat top; height: 1114px; text-align: center;
+}
+.event_wrap .container {
+	padding-top: 90px;
+}
+.event_wrap h2 {
+	margin: 0px auto; width: 1240px; text-align: center; color: rgb(0, 0, 0); font-size: 65px; font-weight: 400; position: relative;
+}
+.event_wrap h2 > em {
+	color: rgb(227, 29, 26); font-weight: bold;
+}
+.event_wrap h2::before {
+	left: 0px; top: 40px; width: 294px; height: 1px; display: block; position: absolute; content: ""; background-color: rgb(0, 0, 0);
+}
+.event_wrap h2::after {
+	left: 0px; top: 40px; width: 294px; height: 1px; display: block; position: absolute; content: ""; background-color: rgb(0, 0, 0);
+}
+.event_wrap h2::after {
+	left: auto; right: 0px;
+}
+.event_wrap em.info {
+	padding: 10px 0px 50px; color: rgb(0, 0, 0); line-height: 1.4em; font-size: 20px; display: block;
+}
+.private-box {
+	margin: 0px auto; padding: 50px 0px; width: 1240px; text-align: center; background-color: rgb(39, 39, 41);
+}
+.private-box .boxwrap {
+	margin: 0px auto; width: 950px; display: block; position: relative;
+}
+.private-box .boxwrap li {
+	text-align: left; margin-bottom: 15px;
+}
+.private-box .boxwrap li .box {
+	vertical-align: top; display: inline-block; position: relative;
+}
+.private-box .boxwrap li .box input[type='text'] {
+	border-color: rgb(160, 160, 160); width: 75%; height: 50px; color: rgb(51, 51, 51); line-height: 50px; padding-left: 25%; font-size: 23px; font-weight: 100;
+}
+.private-box .boxwrap li :first-child.box {
+	width: 288px;
+}
+.private-box .boxwrap li :first-child.box input[type='text'] {
+	width: 68%; padding-left: 32%;
+}
+.private-box .boxwrap li .y_name.box {
+	margin-right: 40px;
+}
+.private-box .boxwrap li .y_phone.box {
+	width: 520px;
+}
+.private-box .boxwrap li .y_select.box input[type='text'] {
+	padding: 0px; width: 400px; text-indent: 24px; margin-right: 15px;
+}
+.private-box .boxwrap li .box > label {
+	left: 22px; top: 16px; color: rgb(27, 27, 27); font-size: 20px; position: absolute;
+}
+.private-box .boxwrap li .box .select {
+	height: 50px;
+}
+.private-box .boxwrap li .box .select label {
+	padding: 0px 36px 0px 20px; color: rgb(27, 27, 27); line-height: 51px; font-size: 20px; position: relative; min-width: 134px; background-color: rgb(255, 255, 255);
+}
+.private-box .boxwrap li .box .select::after {
+	background: url("ico_select.png") no-repeat right; top: 22px; width: 20px; height: 10px; right: 20px;
+}
+.private-box .boxwrap li .mail_bar {
+	width: 38px; text-align: center; color: rgb(255, 255, 255); line-height: 52px; font-size: 28px; vertical-align: top; display: inline-block;
+}
+.private-box .checkwrap {
+	margin: 0px auto; width: 950px; display: block;
+}
+.private-box .checkwrap .cnt {
+	padding-top: 30px;
+}
+.private-box .checkwrap .cnt .check {
+	margin-right: 30px;
+}
+.private-box .checkwrap span label {
+	color: rgb(255, 255, 255); line-height: 30px; font-size: 22px; position: relative; cursor: pointer;
+}
+.private-box .checkwrap span label::before {
+	left: -30px; top: 1px; position: absolute;
+}
+.private-box .checkwrap button {
+	background: none; color: rgb(255, 255, 255); line-height: 30px; font-size: 18px; border-bottom-color: rgb(227, 29, 26); border-bottom-width: 3px; border-bottom-style: solid;
+}
+.event_wrap button.btn_res {
+	background: url("btn_reservation.jpg") no-repeat center; margin: 50px 0px; width: 435px; height: 95px; line-height: 0; text-indent: -99999px; font-size: 0px;
+}
+.event_wrap .notice_wrap {
+	margin: 0px auto; width: 800px; text-align: left; padding-left: 180px; position: relative;
+}
+.event_wrap .notice_wrap > strong {
+	left: 0px; top: 6px; color: rgb(0, 0, 0); line-height: 1em; font-size: 20px; display: block; position: absolute;
+}
+.event_wrap .notice_wrap ul li {
+	padding: 3px 0px; color: rgb(122, 122, 124); font-size: 15px;
+}
+.info_wrap {
+	background: url("slider_bg.jpg") no-repeat top; height: 1091px;
+}
+.info_wrap h2 {
+	background: url("info_title.png") no-repeat bottom; margin: 0px auto; width: 1240px; height: 230px; line-height: 0; text-indent: -99999px; font-size: 0px;
+}
+.info_slide {
+	margin: 0px auto; width: 1240px;
+}
+.slide_wrap {
+	width: 100%; overflow: hidden; font-size: 0px; position: relative;
+}
+.slide_wrap .it {
+	vertical-align: top; display: inline-block; position: relative;
+}
+.slide_wrap .it span {
+	margin: 0px auto; width: 1240px; display: block;
+}
+.slide_wrap .it span img {
+	width: 100%; display: block;
+}
+.slide_wrap .it em.txt {
+	top: -86px; width: 100%; text-align: center; color: rgb(0, 0, 0); font-size: 43px; font-weight: bold; display: block; position: absolute;
+}
+.slide_wrap .it em.txt > em {
+	color: rgb(217, 32, 39);
+}
+.slide_wrap .slick-list {
+	width: 100%; margin-top: 180px;
+}
+.slide_wrap .slick-track {
+	position: relative;
+}
+.slide_wrap .slick-arrow {
+	background: no-repeat top; top: 435px; width: 72px; height: 72px; line-height: 0; text-indent: -99999px; font-size: 0px; position: absolute; z-index: 3;
+}
+.slide_wrap .slick-prev.slick-arrow {
+	left: 0px; background-image: url("arrow_left.png");
+}
+.slide_wrap .slick-next.slick-arrow {
+	right: 0px; background-image: url("arrow_next.png");
+}
+.slide_wrap .slick-dots {
+	text-align: center; padding-top: 20px;
+}
+.slide_wrap .slick-dots li {
+	margin: 0px 6px; vertical-align: top; display: inline-block;
+}
+.slide_wrap .slick-dots li button {
+	background: url("ico_dot_off.png") no-repeat top; width: 17px; height: 17px; line-height: 0; text-indent: -99999px; font-size: 0px; z-index: 3;
+}
+.slide_wrap .slick-dots li.slick-active button {
+	background-image: url("ico_dot_on.png");
+}
+.slide_wrap .slick-dots li button:hover {
+	background-image: url("ico_dot_on.png");
+}
+.spec_wrap dt {
+	display: block;
+}
+.spec_wrap dt button {
+	padding: 38px 0px; width: 100%; text-align: center; display: block; background-color: rgb(16, 16, 16);
+}
+.spec_wrap dt button strong {
+	color: rgb(255, 255, 255); line-height: 1em; font-size: 36px; position: relative;
+}
+.spec_wrap dt button strong::after {
+	background: url("ico_down.png") no-repeat center / 100% auto; top: 50%; width: 44px; height: 32px; right: -70px; margin-top: -16px; display: block; position: absolute; content: "";
+}
+.spec_wrap dt.open button strong::after {
+	background-image: url("ico_up.png");
+}
+.spec_wrap dd {
+	padding-bottom: 100px; display: none; background-color: rgb(38, 39, 40);
+}
+.spec_wrap dd .specbox {
+	margin: 0px auto; width: 1240px;
+}
+#ui_footer {
+	padding: 30px 0px; background-color: rgb(26, 27, 29);
+}
+.footer {
+	margin: 0px auto; width: 1240px;
+}
+.footer::after {
+	clear: both; display: block; content: "";
+}
+.pull-left {
+	float: left;
+}
+.pull-left .address {
+	padding: 40px 0px 20px;
+}
+.pull-left .address li {
+	color: rgb(135, 137, 140); line-height: 1.6; font-size: 15px; margin-right: 20px; display: inline-block; position: relative;
+}
+.pull-left .address li::after {
+	top: 5px; width: 1px; height: 12px; right: -10px; clear: both; display: block; position: absolute; content: ""; background-color: rgb(40, 44, 38);
+}
+.pull-left .address li.a_no::after {
+	display: none;
+}
+.pull-left .ft-winner {
+	margin-bottom: 25px; position: relative;
+}
+.pull-left .ft-winner::after {
+	clear: both; display: block; content: "";
+}
+.pull-left .ft-winner img {
+	float: left;
+}
+.pull-right {
+	padding: 0px 0px 60px 35px; border-left-color: rgb(44, 46, 48); border-left-width: 1px; border-left-style: solid; float: right;
+}
+.pull-right > h2 {
+	margin: 20px 0px 10px; color: rgb(255, 255, 255); font-size: 18px;
+}
+.pull-right .icon-ft-tel {
+	background: url("ft_tel.png") no-repeat center; margin: 10px 0px; width: 237px; height: 31px; line-height: 0; text-indent: -99999px; font-size: 0px; display: block;
+}
+.pull-right > p {
+	color: rgb(135, 137, 140); font-size: 15px;
+}
+.pull-right .lst-social {
+	margin-top: 10px;
+}
+.pull-right .lst-social li {
+	padding: 0px 5px; display: inline-block;
+}
+.pull-right .lst-social li a {
+	background-position: 0px 0px; width: 42px; height: 42px; line-height: 0; text-indent: -99999px; font-size: 0px; display: block; background-image: url("ft_sns.png");
+}
+.pull-right .lst-social li a:hover {
+	background-image: url("ft_sns_on.png");
+}
+.pull-right .lst-social li a.icon-ft-sns-blog {
+	background-position: -52px 0px;
+}
+.pull-right .lst-social li a.icon-ft-sns-youtube {
+	background-position: -104px 0px;
+}
+.pull-right .lst-social li a.icon-ft-sns-insta {
+	background-position: 100% 0px;
+}
+#backBg {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: fixed; z-index: 99; opacity: 0; background-color: rgb(0, 0, 0);
+}
+.layerpopup {
+	left: 50%; top: 305px; width: 560px; margin-left: -280px; display: none; position: absolute; z-index: 110; opacity: 0;
+}
+.layerpopup .pop_wrap {
+	padding: 13px; position: relative; z-index: 2; background-color: rgb(39, 39, 41);
+}
+.layerpopup .btn_x {
+	background: url("btns_close.png") no-repeat center; top: 0px; width: 36px; height: 36px; right: -40px; line-height: 0; font-size: 0px; position: absolute;
+}
+.layerpopup .pop_contents {
+	border: 3px solid rgb(255, 255, 255); border-image: none; text-align: center;
+}
+.layerpopup .pop_contents .tit {
+	margin: 0px 44px; padding: 40px 0px 20px; color: rgb(255, 255, 255); line-height: 1em; font-size: 36px; font-weight: 500; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.layerpopup .pop_contents > p {
+	margin: 20px 0px; color: rgb(255, 255, 255); line-height: 1.4em; font-size: 18px;
+}
+.layerpopup .pop_contents .btn_ok {
+	padding: 5px 0px; width: 125px; color: rgb(255, 255, 255); font-size: 23px; margin-bottom: 35px; background-color: rgb(227, 29, 26);
+}
+.agree_pop.layerpopup {
+	left: 50%; top: 100px; width: 876px; margin-left: -438px;
+}
+.agree_pop.layerpopup .pop_wrap {
+	padding: 10px;
+}
+.agree_pop.layerpopup .pop_contents {
+	border: currentColor; border-image: none; text-align: left;
+}
+.agree_pop.layerpopup .pop_contents .tit {
+	margin: 0px 4px; padding: 0px; line-height: 2em; font-size: 30px; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.agree_pop.layerpopup .cntbox {
+	padding: 30px 30px 50px; background-color: rgb(255, 255, 255);
+}
+.agree_pop.layerpopup .cntbox strong {
+	font-size: 22px;
+}
+.agree_pop.layerpopup .cntbox dl {
+	line-height: 1.6em; font-size: 17px;
+}
+.agree_pop.layerpopup .cntbox dt {
+	margin-top: 24px;
+}
+.agree_pop.layerpopup .cntbox dt:first-child {
+	margin-top: 10px;
+}
+.ie8 .private-box .checkwrap span label::before {
+	display: none;
+}
+.ie8 .private-box .checkwrap .check input[type='checkbox'] {
+	left: -145px; top: 2px;
+}

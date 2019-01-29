@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>외부로딩 $.load에 대하여</title>
+<style>
+body, ul, li, div{ margin:0; padding:0; }
+ul, li{ list-style:none}
+.contents{ max-width:720px; margin:0 auto; text-align:center}
+#tab{ border-top:1px solid #222; overflow:hidden; position:relative; z-index:10 }
+#tab li{ float:left; width:50%; line-height:40px}
+#tab li button{ background-color:transparent; border:none}
+#tab li.show{ border-bottom:3px solid red; font-weight:bold; }
+#tab li.show button{ color:red}
+#conBox{ border-top:1px solid #222; position:relative; top:-1px}
+</style>
+<script
+              src="https://code.jquery.com/jquery-2.2.4.min.js"
+              integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+              crossorigin="anonymous"></script>
+<script>
+$(function(){
+    $("#tab li").each(function(){
+        var _this = $(this);
+        var pageNum =_this.index();
+        var el =$(">button",this);
+        el.on('click', function(){
+            $("#conBox").load('content.html   #con section:eq('+pageNum+')');
+            });    
+        });
+    $("#tab li").eq(0).find('button').trigger('click');
+    
+    });
+</script>
+</head>
+
+<body>
+      <div class="contents">
+          <ul id="tab">
+              <li class="show"><button>컨텐츠0</button></li>
+              <li><button>컨텐츠1</button></li>
+          </ul>
+          <div id="conBox"></div>
+      </div>
+</body>
+</html>

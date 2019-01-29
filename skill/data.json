@@ -1,0 +1,24 @@
+[
+{
+	"d1":"회사소개",
+	"-link":"company.html",
+	"sMenu":[
+	["CEO인사말","ceo.html"],
+	["연혁","history.html"],
+	["오시는길","way.html"]
+	]
+},
+{
+	"d1":"제품소개",
+	"-link":"product.html",
+	"sMenu":[
+	["신상품","new.html"],
+	["이벤트","event.html"]
+	]
+},
+{
+	"d1":"고객지원",
+	"-link":"support.html",
+	"sMenu":[]
+}
+]

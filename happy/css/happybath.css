@@ -1,0 +1,32 @@
+#hd{ text-align:center}
+#hd h1{ width:95px; height:95px; margin:auto; padding:25px 0}
+#hd .top1{ width:1200px; margin:0 auto}
+#hd .top1:after{ content:""; display:block; clear:both}
+#hd .top1 a{ display:block;}
+#hd h1 a{ display:block}
+#hd h1 img{}
+#hd .right{ float:right; margin-right:-10px; margin-top:-60px}
+#hd .top1 li{ float:left;border-left:1px solid black; box-sizing:border-box}
+#hd .right a{ padding:0 10px;line-height:80%;}
+#hd .top1 li:first-child{border-left-width:0}
+
+#hd .top2{}
+#hd .top2 a{ display:block}
+strong{ font-weight:600}
+
+#gnb{ display:inline-block; box-sizing:border-box; position:relative; z-index:10;}
+.so1{position:absolute; height:0; width:100%; overflow:hidden; transition:0.8s; margin-left:-8px; margin-top:20px }
+.so1 li{ padding:10px 0;}
+.so1 a{ font-size:18px}
+#gnb a{}
+#gnb>li{float:left; width:20%; padding:0 10px; box-sizing:border-box;position:relative}
+#gnb >li:hover>a{border-bottom-color:#390000; transition:0.5s}
+#gnb:hover .so1{ height:180px;}
+#gnb>li>a{font-size:18px;border-bottom:3px solid white; padding:0 0 10px 0; width:150px}
+.bgBox{ position:absolute; left:0; right:0; height:0;background-color:rgba(204,204,204,.5);
+transition:0.8s; margin-top:-6px; border-bottom:1px solid #400000}
+#gnb:hover + .bgBox{ height:220px}
+.so2{}
+.so2 img{ padding-top:5px; padding-right:5px}
+.so2 li{ padding:3px 0}
+.so2 a{font-size:14px; text-align:left; padding-left:50px}

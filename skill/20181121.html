@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>전체메뉴 다루기</title>
+<style>
+body,ul,li,div,p,header{margin:0; padding:0;}
+a{color:black; display:inline-block; vertical-align:middle}
+span{display:inline-block; vertical-align:middle}
+ul,li{ list-style:none}
+#hd{border-bottom:2px solid black}
+#hd:after{content:""; display:block; clear:both}
+#hd h1{text-align:center; float:left}
+#hd input{display:none}
+#hd label{display:inline-block; width:50px; vertical-align:middle; padding:10px 3px; border:1px solid black}
+#hd label span{display:block; height:1px; background-color:black; margin:3px}
+#hd .navi{display:inline-block;float: right; margin-top: 36px; }
+
+</style>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+ 
+  <script>
+        $(document).ready(function () {
+   
+                 $.ajax({
+      type: 'GET',
+      url: 'data.json',
+      dataType:"text",
+      success: function (data) {
+          var cate = eval("("+data+")")
+		  var output ="";
+		    for(var c in cate){
+		       output +="<li><a href='"+cate[0]['-link']+"'>"+cate[0]['d1']+"</a></li>";
+			    output += "<div class='d2'>";
+			   for(var a in catp[c]['sMenu']){
+				 output += "<a href='"+cate[c]['sMenu'][a][1]+"'>"+cate[c]['sMenu'][a][0]+"</a>";
+				   }
+			   output += "<div>";
+			   output +="<li>"
+			}
+			   $("#gnb").html(output)
+	  },
+     error: function(data,status,error){
+     alert("code:"+data.status+"\n"+"message:"+data.responseText+"\n"+"error:"+error);
+       }
+       
+            });
+        
+  
+});
+    </script></head>
+
+<body>
+ <header id="hd">
+ 	<h1><a href="">logo</a></h1>
+ 	<div class="navi">
+      <input type="checkbox" id="toggle">
+ 	  <label for="toggle">
+ 		<span></span>
+ 		<span></span>
+ 		<span></span>
+      </label>
+     
+ 	  <ul id="gnb"></ul>
+   </div>
+ </header>
+</body>
+</html>

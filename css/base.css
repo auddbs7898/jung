@@ -1,0 +1,10 @@
+@charset "utf-8";/*번역해쥼*/
+body,div,buttoon,ul,li,dl,dd,dt,footer,header,p,h1,h2,h3,h4,section,img{ margin:0; padding:0; font-family:"맑은고딕";
+line-height:100%;letter-spacing:-1px; font-size:16px }
+ul,li,dd,dt,dl{ list-style:none}
+img{ border:none}
+a{ text-decoration:none; color:black}
+a:hover{ color:#069;}
+span,strong,em{ display:inline-block; vertical-align:middle; font-style: normal}
+
+

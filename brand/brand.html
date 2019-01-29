@@ -1,0 +1,118 @@
+<? include_once("./top.php"); ?>
+<script>
+$(document).ready(function(){
+        $('#mainlisttrigger').click(function(){
+        
+            $.ajax({
+               type: "GET"
+               ,dataType: "xml"
+               ,url: "xml/introduce/brand.xml"
+               ,success: function(xml){
+                    var xmlData = $(xml).find("info");
+					var bxmlData = $(xml).find("brandList");
+					var imgsrc = xmlData.find("센터이미지경로").text();
+                    var listLength = xmlData.length;
+					var blistLength = bxmlData.length;
+					
+                   // if (listLength) {
+                        var contentStr = "";
+						
+                    //   
+                            contentStr += "<div class='cr_infomation'><pre>"+ xmlData.find("센터인사말").html() +"</pre></div>"
+										  +"<p><em>"+ xmlData.find("센터연락처").text() +"</em>"
+                                          +"<em>"+ xmlData.find("센터팩스").text() +"</em></p>"
+                                          +"<p>"+ xmlData.find("센터이메일").html() +"</p>"
+										  +"<address class='font12'>"+ xmlData.find("센터우편번호").html() +" )<br>"
+										  + xmlData.find("센터주소").html() +"</address>";
+							
+							$("#footer_contact").prepend(contentStr);	
+							$(".introBanner").attr("src", imgsrc);	
+							 $(bxmlData).each(function(index, e){	
+							 var liNum =$(".format-itemcard-list__item").eq($(this).find("순번").text());
+							 var liNumimg =liNum.find(".img-bannercard");
+							 var liNumTitle = liNum.find(".bannercard__visual__summary__row"); 
+							 var liNumHref = liNum.find(".bannercard__link");
+							 	  liNumimg.attr({
+									  "alt":$(this).find('브랜드명').text(),
+									  "src":"page/"+$(this).find('폴더').text()+"/work/img_"+$(this).find('대표이미지번호').text()+".jpg"});
+								 liNumTitle.eq(0).html($(this).find('브랜드명').text() + " " +$(this).find('영문명').text());
+								 liNumTitle.eq(1).html("[ "+$(this).find('호실').text() + " ]  " +$(this).find('연락처').text());
+							    liNumHref.attr("href","page/brand.html?b_id="+$(this).find('폴더').text())
+                             });
+                        
+						
+                    }
+              //  }
+             }); 
+      
+        });
+		$('#mainlisttrigger').trigger('click');
+    });
+</script>
+
+       
+            
+                <div class="comp comp--home-banner">                    
+                    <div class="corner">
+                        
+                        <div class="corner__body">
+                            <div class="home-banner-wrap">
+                                <div class="home-banner-wrap__swipe direction-right">
+                                    <img class="introBanner" src="https://seoulcraftcenter.kr/wp-content/uploads/2017/03/swcc_intro2.png" alt="" srcset="https://seoulcraftcenter.kr/wp-content/uploads/2017/03/swcc_intro2.png 2000w, https://seoulcraftcenter.kr/wp-content/uploads/2017/03/swcc_intro2-300x101.png 300w, https://seoulcraftcenter.kr/wp-content/uploads/2017/03/swcc_intro2-768x259.png 768w, https://seoulcraftcenter.kr/wp-content/uploads/2017/03/swcc_intro2-1024x345.png 1024w, https://seoulcraftcenter.kr/wp-content/uploads/2017/03/swcc_intro2-436x147.png 436w, https://seoulcraftcenter.kr/wp-content/uploads/2017/03/swcc_intro2-1080x364.png 1080w"  >
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                
+                <div class="comp comp--home-contents">                    
+                    <div class="corner">
+                        
+                        <div class="corner__body">
+                            <div class="format-result">
+                                <div class="format-result__list">
+                                    <ul class="format-itemcard-list">
+                                            <li class="format-itemcard-list__item">
+                                                
+                    <div class="bannercard">
+                
+                        <div class="bannercard__visual">
+                            <div class="bannercard__visual__img">
+                
+                                <a href="브랜드링크변수" class="bannercard__link" >
+                                    <img src="page/폴더/img_대표이미지번호.jpg" alt="브랜드명" class="img-bannercard">
+                                </a>
+                            </div>
+                            <div class="bannercard__visual__summary">
+                                <div class="bannercard__visual__summary_bg">
+                                    <a href="브랜드링크변수" class="bannercard__link" >
+                                        <strong class="bannercard__visual__summary__title">
+                                            <span class="bannercard__visual__summary__row ellipsis">브랜드제목</span>
+                                                <span class="bannercard__visual__summary__row ellipsis">호실</span>
+                                        </strong>
+                                        <p class="bannercard__visual__summary__subtitle">
+                                            <span class="bannercard__visual__summary__row ellipsis">간략브랜드설명</span>
+                                               <span class="bannercard__visual__summary__row ellipsis">사이트주소</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        
+                
+                        
+                
+                    </div>
+                
+                                            </li>
+                                    </ul>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+           
+<? include_once("./bottom.php"); ?>      

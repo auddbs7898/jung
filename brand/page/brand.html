@@ -1,0 +1,131 @@
+<?php 
+$bid = $_GET['b_id'];
+include_once("../top.php"); 
+?>
+<style>
+.gnb-logo{ font-size:22px; font-weight:normal}
+.gnb-logo a{color:black; }
+</style>
+<script>
+$(document).ready(function(){
+        $('#mainlisttrigger').click(function(){
+        
+            $.ajax({
+               type: "GET"
+               ,dataType: "xml"
+               ,url: "<? echo $bid; ?>/xml/brand.xml" //brand, 작품들
+               ,success: function(xml){				
+                   var xmlData = $(xml).find("info");
+				   var titleLogo = xmlData.find("브랜드명").text();
+				   var titleLogoimg = xmlData.find("로고경로").text();
+				   if(titleLogoimg == ""){
+                     //$(".img_logo").css({"width":0,"height":0});
+$(".gnb-logo > a").attr({"title":titleLogo,"href":"/brand/page/brand.html?b_id=<? echo $bid; ?>"}).html(titleLogo); 
+  
+				   }else{
+					   $(".gnb-logo > a").attr({"title":titleLogo,"href":"/brand/page/brand.html?b_id=<? echo $bid; ?>"})
+					   $(".img_logo").attr("src",titleLogoimg);  
+				   }
+				   var proData = xmlData.find("작품들").find("work");
+				   var proDataNum = proData.length;
+				   var workliData = $(".format-itemcard-list").html();//ul안에 태그저장
+				   var workOutput = "";
+				   
+				   
+				   for(var i=0; i<proDataNum; i++){
+					   workOutput +=workliData
+					 }   
+					    $(".format-itemcard-list").html(workOutput);
+						
+					   $(proData).each(function(index, element) {
+                   var liNum =$(".format-itemcard-list__item").eq(index);
+				   var liNumimg =liNum.find(".img-bannercard");
+				   var liNumTitle = liNum.find(".bannercard__visual__summary__row"); 
+				   var liNumSub = liNum.find(".bannercard__visual__summary__subtitle")
+				   var liNumLink = 
+				        liNumimg.attr({
+									  "alt":$(this).find('data5').text(),
+									  "src":"<? echo $bid; ?>/work/img_"+index+".jpg"});
+									  
+						liNumTitle.eq(0).html($(this).find('data5').text());
+						liNumTitle.eq(1).html($(this).find('data11').text());
+						
+						
+				 $(".bannercard__link").attr({"href":"/brand/page/detail.html?b_id=<? echo $bid; ?>"})
+						
+                });
+					  
+					   
+		       
+			
+                    
+				  
+				   var contentStr = "";
+						
+                    //   
+                            contentStr 
+							              += "<p class='pro_infomation'>작품수"+ proDataNum+"개</div>"
+										  +"<div class='br_infomation'>"+ xmlData.find("업체소개").html() +"</div>"
+										  +"<p><em><a href='tel:'>"+ xmlData.find("연락처").text() +"</a></em></p>"
+                                          +"<p><em><a href='"+ xmlData.find("사이트주소").text() +"' target='_blank'>"+ xmlData.find("사이트주소").text() +"</a></em></p>"
+                                          +"<p><a href='mailto:"+ xmlData.find("이메일").html() +"'>"+ xmlData.find("이메일").html() +"</a></p>"
+										  +"<address class='font12'>"+ xmlData.find("SNS").html() +"<br>"
+										  + "</address>";
+							
+							$("#footer_contact").prepend(contentStr);							
+                    }             
+             }); 
+      
+        });
+		$('#mainlisttrigger').trigger('click');
+    });
+</script>
+<div class="comp comp--home-contents">                    
+                    <div class="corner">
+                        
+                        <div class="corner__body">
+                            <div class="format-result">
+                                <div class="format-result__list">
+                                    <ul class="format-itemcard-list">
+                                            <li class="format-itemcard-list__item">
+                                                
+                    <div class="bannercard">
+                
+                        <div class="bannercard__visual">
+                            <div class="bannercard__visual__img">
+                
+                                <a href="브랜드링크변수" class="bannercard__link" >
+                                    <img src="page/폴더/img_대표이미지번호.jpg" alt="브랜드명" class="img-bannercard">
+                                </a>
+                            </div>
+                            <div class="bannercard__visual__summary">
+                                <div class="bannercard__visual__summary_bg">
+                                    <a href="브랜드링크변수" class="bannercard__link" >
+                                        <strong class="bannercard__visual__summary__title">
+                                            <span class="bannercard__visual__summary__row ellipsis">브랜드제목</span>
+                                                <span class="bannercard__visual__summary__row ellipsis">호실</span>
+                                        </strong>
+                                        <p class="bannercard__visual__summary__subtitle">
+                                            <span class="bannercard__visual__summary__row ellipsis">간략브랜드설명</span>
+                                               <span class="bannercard__visual__summary__row ellipsis">사이트주소</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        
+                
+                        
+                
+                    </div>
+                
+                                            </li>
+                                    </ul>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+<?php include_once("../bottom.php"); ?>

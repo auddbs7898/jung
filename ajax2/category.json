@@ -1,0 +1,40 @@
+
+[
+{
+  "ctName":"회사소개",
+  "ctLink":"com.html",
+  "sMenu" : true,
+  "sLa" : [
+       ["ceo인사말","ceo.html"],
+       ["연혁","history.html"],
+       ["오시는길","way.html"]
+    ] , 
+ "linkType":"_self",
+ "nameDisplay":true,
+   "cateCss":"colorR"
+},
+{
+  "ctName":"제품소개",
+  "ctLink":"product.html",
+  "sMenu" : true,
+  "sLa" : [
+       ["신제품","new.html"],
+       ["이벤트","event.html"],
+    ] , 
+ "linkType":"_blank",
+ "nameDisplay":false,
+   "cateCss":"colorG"
+},
+{
+  "ctName":"고객지원",
+  "ctLink":"support.html",
+  "sMenu" : false,
+  "sLa" : [
+       ["예비1","ceo.html"],
+       ["예비2","history.html"],
+    ] , 
+    "linkType":"_blank",
+ "nameDisplay":true,
+   "cateCss":"colorG"
+},
+]
