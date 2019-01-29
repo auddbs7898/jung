@@ -1,0 +1,32 @@
+@media (min-width: 768px){
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.navbar-nav>li {
+     float: none;
+}
+.navbar-nav>li>a {
+    text-align: right
+}
+.navbar-header { left:0; top:0; position: fixed}
+.container>.navbar-collapse{ position:fixed; right:0; top:0; height:100%}
+#bs-example-navbar-collapse-1{}
+.navbar-default .navbar-brand, .navbar-inverse .navbar-brand {font-family: arial, "Nanum Barun Gothic", "Malgun Gothic", "맑은 고딕", Dotum, 돋움, sans-serif;}
+.container>.navbar-collapse {
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+.container { margin-left:0}
+.navbar>.container .navbar-brand{ margin-left:40px}
+.container>.navbar-header { position:relative; margin-left: 100px;}
+.container>.navbar-header:before{ content:""; display:block; position:absolute; top:50%; transform: translateY(-50%); left:0; width:30px; height:30px; background-image:url(/boot/img/agency/ham.png)}
+
+.navbar-inverse .navbar-nav > li > a{ margin-right:80px}
+.navbar-inverse .navbar-nav > li:before{content:""; display:block; position:absolute; top:17px; right:0; width:64px;height:18px; background:url(http://leedongwook.co.kr/storage/kkbyssKR/www/frontstore/default_10/KR/Frontend/pcimg/bullet_off.png) no-repeat;}
+.navbar-inverse .navbar-nav > .active{ position:relative;}
+.navbar-inverse .navbar-nav > .active:before{ background:url(http://leedongwook.co.kr/storage/kkbyssKR/www/frontstore/default_10/KR/Frontend/pcimg/bullet_on.png) no-repeat;}
+.navbar-inverse .navbar-nav > li{ position:relative;}
+
+}

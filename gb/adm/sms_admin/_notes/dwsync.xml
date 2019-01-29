@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="_common.php" server="auddbs7898.cafe24.com" local="131932012253923324" remote="131846461800000000" Dst="0" />
+<file name="ajax.hp_chk.php" server="auddbs7898.cafe24.com" local="131932012254333347" remote="131846461800000000" Dst="0" />
+<file name="ajax.sms_write_form.php" server="auddbs7898.cafe24.com" local="131932012254433353" remote="131846461800000000" Dst="0" />
+<file name="ajax.sms_write_group.php" server="auddbs7898.cafe24.com" local="131932012254433353" remote="131846461800000000" Dst="0" />
+<file name="ajax.sms_write_level.php" server="auddbs7898.cafe24.com" local="131932012254913380" remote="131846461800000000" Dst="0" />
+<file name="ajax.sms_write_person.php" server="auddbs7898.cafe24.com" local="131932012255013386" remote="131846461800000000" Dst="0" />
+<file name="config.php" server="auddbs7898.cafe24.com" local="131932012255023387" remote="131846461800000000" Dst="0" />
+<file name="config_update.php" server="auddbs7898.cafe24.com" local="131932012255223398" remote="131846461800000000" Dst="0" />
+<file name="emoticon_move.php" server="auddbs7898.cafe24.com" local="131932012270434268" remote="131846461800000000" Dst="0" />
+<file name="emoticon_move_update.php" server="auddbs7898.cafe24.com" local="131932012270434268" remote="131846461800000000" Dst="0" />
+<file name="form_group.php" server="auddbs7898.cafe24.com" local="131932012270954298" remote="131846461800000000" Dst="0" />
+<file name="form_group_move.php" server="auddbs7898.cafe24.com" local="131932012270954298" remote="131846461800000000" Dst="0" />
+<file name="form_group_update.php" server="auddbs7898.cafe24.com" local="131932012270994300" remote="131846461800000000" Dst="0" />
+<file name="form_list.php" server="auddbs7898.cafe24.com" local="131932012271594334" remote="131846461800000000" Dst="0" />
+<file name="form_multi_update.php" server="auddbs7898.cafe24.com" local="131932012271594334" remote="131846461800000000" Dst="0" />
+<file name="form_update.php" server="auddbs7898.cafe24.com" local="131932012273694454" remote="131846461800000000" Dst="0" />
+<file name="form_write.php" server="auddbs7898.cafe24.com" local="131932012274184482" remote="131846461800000000" Dst="0" />
+<file name="history_list.php" server="auddbs7898.cafe24.com" local="131932012274184482" remote="131846461800000000" Dst="0" />
+<file name="history_num.php" server="auddbs7898.cafe24.com" local="131932012274224485" remote="131846461800000000" Dst="0" />
+<file name="history_send.php" server="auddbs7898.cafe24.com" local="131932012274554504" remote="131846461800000000" Dst="0" />
+<file name="history_view.php" server="auddbs7898.cafe24.com" local="131932012274634508" remote="131846461800000000" Dst="0" />
+<file name="install.php" server="auddbs7898.cafe24.com" local="131932012287275231" remote="131846461800000000" Dst="0" />
+<file name="member_update.php" server="auddbs7898.cafe24.com" local="131932012287275231" remote="131846461800000000" Dst="0" />
+<file name="member_update_run.php" server="auddbs7898.cafe24.com" local="131932012287795261" remote="131846461800000000" Dst="0" />
+<file name="num_book_file.php" server="auddbs7898.cafe24.com" local="131932012287845264" remote="131846461800000000" Dst="0" />
+<file name="num_book.php" server="auddbs7898.cafe24.com" local="131932012287905267" remote="131846461800000000" Dst="0" />
+<file name="num_book_file_download.php" server="auddbs7898.cafe24.com" local="131932012288345292" remote="131846461800000000" Dst="0" />
+<file name="num_book_file_upload.php" server="auddbs7898.cafe24.com" local="131932012288345292" remote="131846461800000000" Dst="0" />
+<file name="num_book_move.php" server="auddbs7898.cafe24.com" local="131932012288395295" remote="131846461800000000" Dst="0" />
+<file name="num_book_multi_update.php" server="auddbs7898.cafe24.com" local="131932012288905324" remote="131846461800000000" Dst="0" />
+<file name="num_book_update.php" server="auddbs7898.cafe24.com" local="131932012288905324" remote="131846461800000000" Dst="0" />
+<file name="num_book_write.php" server="auddbs7898.cafe24.com" local="131932012288965328" remote="131846461800000000" Dst="0" />
+<file name="num_group.php" server="auddbs7898.cafe24.com" local="131932012289445355" remote="131846461800000000" Dst="0" />
+<file name="num_group_move.php" server="auddbs7898.cafe24.com" local="131932012289455356" remote="131846461800000000" Dst="0" />
+<file name="num_group_update.php" server="auddbs7898.cafe24.com" local="131932012289505359" remote="131846461800000000" Dst="0" />
+<file name="number_move_update.php" server="auddbs7898.cafe24.com" local="131932012290255402" remote="131846461800000000" Dst="0" />
+<file name="sms5.sql" server="auddbs7898.cafe24.com" local="131932012290255402" remote="131846461800000000" Dst="0" />
+<file name="sms_ing.php" server="auddbs7898.cafe24.com" local="131932012290315405" remote="131846461800000000" Dst="0" />
+<file name="sms_write_form.php" server="auddbs7898.cafe24.com" local="131932012290835435" remote="131846461800000000" Dst="0" />
+<file name="sms_write_overlap_check.php" server="auddbs7898.cafe24.com" local="131932012290875437" remote="131846461800000000" Dst="0" />
+<file name="sms_write.php" server="auddbs7898.cafe24.com" local="131932012290935441" remote="131846461800000000" Dst="0" />
+<file name="sms_write_send.php" server="auddbs7898.cafe24.com" local="131932012291545475" remote="131846461800000000" Dst="0" />
+</dwsync>
